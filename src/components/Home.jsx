@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { 
     Experiences,
@@ -24,6 +24,25 @@ export default function Home(){
                 return <Experiences />
         }
     }
+
+    // #9CAFB7
+    const bgColors = {
+        Experiences: "linear-gradient(to bottom, #4281A4, #9CAFB7)",
+        Education: "linear-gradient(to bottom right, #EAD2AC, #FEFAE0)",
+        Skills: "linear-gradient(to top left, #FE938C, #E6B89C)",
+        Projects: "linear-gradient(to left, #E6B89C, #B6C9BB)",
+    };
+
+
+    const currentBg = bgColors[activeTab] || "#ffffff";
+
+    useEffect(() => {
+        document.body.style.background = currentBg;
+        document.body.style.transition = "background 0.5s ease";
+        document.body.style.backgroundAttachment = "fixed"; // pour garder le gradient fixe
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+    }, [currentBg]);
 
     return (
     <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col items-center">
@@ -57,7 +76,7 @@ export default function Home(){
       </header>
 
       {/* --- Menu --- */}
-      <nav className="flex gap-6 mt-6 border-b pb-2">
+      <nav className="flex gap-6 mt-6 pb-2">
         {["Experiences", "Projects", "Skills", "Education"].map((tab) => (
           <button
             key={tab}
@@ -74,7 +93,7 @@ export default function Home(){
       </nav>
 
       {/* --- Contenu principal --- */}
-      <main className="w-full max-w-4xl mt-8 p-4">{renderContent()}</main>
+      <main className="w-full max-w-4xl p-4">{renderContent()}</main>
     </div>
   );
 }
