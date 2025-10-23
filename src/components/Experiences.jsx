@@ -3,7 +3,7 @@ export default function Experiences(){
     const experiences = {
         wobz : {
             enterprise : "Wobz (Exens consultant)",
-            logo : "../src/assets/experience_icon/wobz.png",
+            logo : "../assets/experience_icon/wobz.png",
             job : "Software Developer",
             missions: [
                 "Development of an IoT solution in Python designed for RFID chip reading.",
@@ -23,7 +23,7 @@ export default function Experiences(){
         },
         rtruck : {
             enterprise : "Renault Trucks",
-            logo : "../src/assets/experience_icon/rt.png",
+            logo : "../assets/experience_icon/rt.png",
             job : "Software Developer",
             missions: [
                 "Implementation of a RAG chatbot for a sales application.",
@@ -43,7 +43,7 @@ export default function Experiences(){
         },
         vizity : {
             enterprise : "Vizity",
-            logo : "../src/assets/experience_icon/vizity.png",
+            logo : "../assets/experience_icon/vizity.png",
             job : "Software Developer",
             missions: [
                 "Design of an interactive mapping solution.",

@@ -5,19 +5,19 @@ export default function Projects(){
         project1: {
             title : "project1",
             description : "todo",
-            picture : "../src/assets/tech_icon/git_icon.png",
+            picture : "../assets/tech_icon/git_icon.png",
             technos : ["c", "html", "css"]
         },
         project2: {
             title : "project1",
             description : "todo",
-            picture : "../src/assets/tech_icon/git_icon.png",
+            picture : "../assets/tech_icon/git_icon.png",
             technos : ["c", "html", "css"]
         },
         project3: {
             title : "project1",
             description : "todo",
-            picture : "../src/assets/tech_icon/git_icon.png",
+            picture : "../assets/tech_icon/git_icon.png",
             technos : ["c", "html", "css"]
         }
     }
