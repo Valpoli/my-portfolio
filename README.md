@@ -6,6 +6,7 @@ It uses :
 Vite - Fast build and optimisation
 React - Flexible
 Tailwind CSS - Simple responsive design
+ESLint
 
 It is hosted on Github pages at : todo
 
