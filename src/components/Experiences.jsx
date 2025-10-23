@@ -3,7 +3,7 @@ export default function Experiences(){
     const experiences = {
         wobz : {
             enterprise : "Wobz (Exens consultant)",
-            logo_enterprise : "../src/assets/tech_icon/git_icon.png",
+            logo : "../src/assets/experience_icon/wobz.png",
             job : "Software Developer",
             missions: [
                 "Development of an IoT solution in Python designed for RFID chip reading.",
@@ -23,7 +23,7 @@ export default function Experiences(){
         },
         rtruck : {
             enterprise : "Renault Trucks",
-            logo_enterprise : "../src/assets/tech_icon/git_icon.png",
+            logo : "../src/assets/experience_icon/rt.png",
             job : "Software Developer",
             missions: [
                 "Implementation of a RAG chatbot for a sales application.",
@@ -43,7 +43,7 @@ export default function Experiences(){
         },
         vizity : {
             enterprise : "Vizity",
-            logo_enterprise : "../src/assets/tech_icon/git_icon.png",
+            logo : "../src/assets/experience_icon/vizity.png",
             job : "Software Developer",
             missions: [
                 "Design of an interactive mapping solution.",
@@ -64,12 +64,6 @@ export default function Experiences(){
     }
 
     const educations = {
-        sup : {
-            location : "Lyon",
-            years : "2016 - 2019",
-            school : "Lycée Edouart Herriot",
-            info : ["Bac S - Mention Bien"]
-        },
         highschool : {
             location : "Lyon/Toulouse",
             years : "2019 - 2024",
@@ -78,6 +72,12 @@ export default function Experiences(){
                     "Engineering Degree in Computer Science",
                     "Major: SSIE – Safety and Security of Embedded Intelligence"
                 ]
+        },
+        sup : {
+            location : "Lyon",
+            years : "2016 - 2019",
+            school : "Lycée Edouart Herriot",
+            info : ["Bac S - Mention Bien"]
         }
     }
 
@@ -100,10 +100,10 @@ export default function Experiences(){
     };
 
       return (
-        <div className="flex flex-col items-center gap-8 p-8 bg-gray-50 text-gray-800">
+        <div className="flex flex-col items-center gap-8 bg-gray-50 text-gray-800 text-left">
         {/* --- Job Experiences --- */}
         <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-            <h2 className="text-2xl font-bold mb-6 text-center">Job Experiences</h2>
+            <h2 className="text-xl font-bold mb-6 text-left">Job Experiences</h2>
 
             <div className="flex flex-col gap-6">
             {Object.values(experiences).map((exp, i) => (
@@ -120,14 +120,14 @@ export default function Experiences(){
                     />
                     )}
                     <div className="flex flex-col">
-                    <h3 className="text-lg font-semibold">
-                        {exp.enterprise} – {exp.job}
-                    </h3>
-                    <p className="text-gray-500 text-sm">
-                        {formatDate(exp.begining)} → {formatDate(exp.end)} •{" "}
-                        {calculateDuration(exp.begining, exp.end)} • {exp.contract} •{" "}
-                        {exp.localisation}
-                    </p>
+                        <h3 className="text-lg font-semibold">
+                            {exp.enterprise} – {exp.job}
+                        </h3>
+                        <p className="text-gray-500 text-sm">
+                            {formatDate(exp.begining)} → {formatDate(exp.end)} •{" "}
+                            {calculateDuration(exp.begining, exp.end)} • {exp.contract} •{" "}
+                            {exp.localisation}
+                        </p>
                     </div>
                 </div>
 
@@ -159,7 +159,7 @@ export default function Experiences(){
 
         {/* --- Education --- */}
         <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
-            <h2 className="text-2xl font-bold mb-6 text-center">Education</h2>
+            <h2 className="text-2xl font-bold mb-6">Education</h2>
 
             <div className="flex flex-col gap-6">
             {Object.values(educations).map((edu, i) => (
@@ -167,15 +167,15 @@ export default function Experiences(){
                 key={i}
                 className="border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow duration-300 bg-white"
                 >
-                <h3 className="text-lg font-semibold">{edu.school}</h3>
-                <p className="text-gray-500 text-sm">
-                    {edu.years} • {edu.location}
-                </p>
-                <ul className="list-disc list-inside mt-2 text-gray-700">
-                    {edu.info.map((info, idx) => (
-                    <li key={idx}>{info}</li>
-                    ))}
-                </ul>
+                    <h3 className="text-lg font-semibold">{edu.school}</h3>
+                    <p className="text-gray-500 text-sm">
+                        {edu.years} • {edu.location}
+                    </p>
+                    <ul className="list-disc list-inside mt-2 text-gray-700">
+                        {edu.info.map((info, idx) => (
+                        <li key={idx}>{info}</li>
+                        ))}
+                    </ul>
                 </div>
             ))}
             </div>
