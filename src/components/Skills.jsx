@@ -25,7 +25,7 @@ export default function Skills() {
         { name: "Flask", src: "../src/assets/tech_icon/flask_icon.png" },
         { name: "Django", src: "../src/assets/tech_icon/django_icon.png" },
         { name: "Node.js", src: "../src/assets/tech_icon/nodejs_icon.svg" },
-        { name: "Spring Boot", src: "../src/assets/tech_icon/springboot_icon.png" },
+        { name: "SpringBoot", src: "../src/assets/tech_icon/springboot_icon.png" },
       ],
     },
     database: {
@@ -49,23 +49,23 @@ export default function Skills() {
   };
 
   return (
-    <div className="flex flex-wrap justify-center gap-8 bg-gray-50">
+    <div className="flex flex-wrap justify-center gap-8 bg-gray-50 text-lg">
       {Object.values(skills).map((category) => (
         <div
           key={category.name}
-          className="flex flex-col items-center w-52 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg"
+          className="flex flex-col items-center w-80 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg p-3"
         >
-            <h3 className="text-sm font-semibold text-gray-700 mt-4 text-center">
+            <h3 className="font-semibold text-gray-700 mt-4 text-center">
             {category.name}
             </h3>
-            <div className="flex flex-wrap justify-center items-center gap-2 mt-4 mb-4">
+            <div className="flex flex-wrap justify-center items-center gap-5 mt-4 mb-4">
                 {category.related_icons.map((icon, index) => (
-                    <div key={index} className="relative group w-8 h-8 flex items-center justify-center">
+                    <div key={index} className="relative group w-12 h12 flex items-center justify-center">
                         <img
                             src={icon.src}
                             alt={icon.name}
                         />
-                        <span className="bg-gray-50 p-1 absolute bottom-[-1.5rem] text-xs text-black opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span className="bg-gray-50 p-1 absolute bottom-[-2rem] text-black opacity-0 group-hover:opacity-100 transition-opacity">
                             {icon.name}
                         </span>
                     </div>
