@@ -1,27 +1,6 @@
+import { projects } from "./index"
+
 export default function Projects(){
-
-
-    const projects = {
-        project1: {
-            title : "project1",
-            description : "todo",
-            picture : "../assets/tech_icon/git_icon.png",
-            technos : ["c", "html", "css"]
-        },
-        project2: {
-            title : "project1",
-            description : "todo",
-            picture : "../assets/tech_icon/git_icon.png",
-            technos : ["c", "html", "css"]
-        },
-        project3: {
-            title : "project1",
-            description : "todo",
-            picture : "../assets/tech_icon/git_icon.png",
-            technos : ["c", "html", "css"]
-        }
-    }
-
     return (
     <div className="flex flex-wrap justify-center gap-6 bg-gray-50 text-lg">
       {Object.values(projects).map((project, index) => (

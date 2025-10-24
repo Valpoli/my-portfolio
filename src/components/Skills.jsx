@@ -1,53 +1,6 @@
-export default function Skills() {
-  const skills = {
-    programming_languages: {
-      name: "Programming Languages",
-      related_icons: [
-        { name: "Python", src: "../assets/tech_icon/python_icon.png" },
-        { name: "Java", src: "../assets/tech_icon/java_icon.png" },
-        { name: "C", src: "../assets/tech_icon/c_icon.svg" },
-        { name: "C++", src: "../assets/tech_icon/cpp_icon.svg" },
-        { name: "JavaScript", src: "../assets/tech_icon/js_icon.svg" },
-      ],
-    },
-    frontend: {
-      name: "Frontend",
-      related_icons: [
-        { name: "HTML", src: "../assets/tech_icon/html_icon.png" },
-        { name: "CSS", src: "../assets/tech_icon/css_icon.png" },
-        { name: "Tailwind", src: "../assets/tech_icon/tailwind_icon.png" },
-        { name: "React", src: "../assets/tech_icon/react_icon.png" },
-      ],
-    },
-    backend: {
-      name: "Backend",
-      related_icons: [
-        { name: "Flask", src: "../assets/tech_icon/flask_icon.png" },
-        { name: "Django", src: "../assets/tech_icon/django_icon.png" },
-        { name: "Node.js", src: "../assets/tech_icon/nodejs_icon.svg" },
-        { name: "SpringBoot", src: "../assets/tech_icon/springboot_icon.png" },
-      ],
-    },
-    database: {
-      name: "Database",
-      related_icons: [
-        { name: "MySQL", src: "../assets/tech_icon/mysql_icon.png" },
-      ],
-    },
-    devops: {
-      name: "DevOps",
-      related_icons: [
-        { name: "Docker", src: "../assets/tech_icon/docker_icon.png" },
-      ],
-    },
-    cli: {
-      name: "CLI",
-      related_icons: [
-        { name: "Git", src: "../assets/tech_icon/git_icon.png" },
-      ],
-    },
-  };
+import { skills } from "./index"
 
+export default function Skills() {
   return (
     <div className="flex flex-wrap justify-center gap-8 bg-gray-50 text-lg">
       {Object.values(skills).map((category) => (

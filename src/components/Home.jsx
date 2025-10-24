@@ -3,7 +3,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { 
     Experiences,
     Skills,
-    Projects
+    Projects,
+    bgColors
  } from "./index"
 
 export default function Home(){
@@ -21,15 +22,6 @@ export default function Home(){
                 return <Experiences />
         }
     }
-
-    // #9CAFB7
-    const bgColors = {
-        Experiences: "linear-gradient(to bottom, #4281A4, #9CAFB7)",
-        // Education: "linear-gradient(to bottom right, #EAD2AC, #FEFAE0)",
-        Skills: "linear-gradient(to top left, #FE938C, #E6B89C)",
-        Projects: "linear-gradient(to left, #E6B89C, #B6C9BB)",
-    };
-
 
     const currentBg = bgColors[activeTab] || "#ffffff";
 
