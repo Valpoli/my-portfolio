@@ -4,8 +4,11 @@ export default function Projects(){
     return (
     <div className="flex flex-wrap justify-center gap-6 bg-gray-50 text-lg">
       {Object.values(projects).map((project, index) => (
-        <div
+         <a
           key={index}
+          href={project.gh_link}
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-full mx-2 bg-white shadow-lg rounded-2xl hover:shadow-xl transition-shadow duration-300"
         >
           <img
@@ -34,7 +37,7 @@ export default function Projects(){
               ))}
             </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );

@@ -8,5 +8,5 @@ React - Flexible
 Tailwind CSS - Simple responsive design
 ESLint
 
-It is hosted on Github pages at : todo
+It is hosted on Github pages at : [my_portfolio](https://valpoli.github.io/my-portfolio/)
 

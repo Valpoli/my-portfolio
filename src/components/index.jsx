@@ -28,6 +28,9 @@ import wobzLogo from "../assets/experience_icon/wobz.png";
 import rtLogo from "../assets/experience_icon/rt.png";
 import vizityLogo from "../assets/experience_icon/vizity.png";
 
+// --- Project Pictures ---
+import story from "../assets/projects/story.png";
+
 // Background Gradients
 export const bgColors = {
   Experiences: "linear-gradient(to bottom, #4281A4, #9CAFB7)",
@@ -108,22 +111,26 @@ export const experiences = {
 // Projects
 export const projects = {
   project1: {
-    title: "project1",
-    description: "todo",
-    picture: gitIcon,
-    technos: ["C", "HTML", "CSS"],
+    title: "Ai video creator",
+    description: "A fully automated system that creates complete story-based videos :"
+    + " script writing, image generation, voice synthesis, subtitles, editing, and background music.",
+    picture: story,
+    technos: ["Python", "SQLite", "CSS", "Uv", "Ruff", "GitHub Models", "Whisper", "Coqui TTS", "Leonardo AI API"],
+    gh_link: "https://github.com/Valpoli/ai-content-creator/tree/main"
   },
   project2: {
     title: "project2",
     description: "todo",
     picture: gitIcon,
     technos: ["C", "HTML", "CSS"],
+    gh_link: "https://github.com/Valpoli/ai-content-creator/tree/main"
   },
   project3: {
     title: "project3",
     description: "todo",
     picture: gitIcon,
     technos: ["C", "HTML", "CSS"],
+    gh_link: "https://github.com/Valpoli/ai-content-creator/tree/main"
   },
 };
 
