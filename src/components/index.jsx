@@ -30,6 +30,7 @@ import vizityLogo from "../assets/experience_icon/vizity.png";
 
 // --- Project Pictures ---
 import story from "../assets/projects/story.png";
+import chat from "../assets/projects/chat.png";
 
 // Background Gradients
 export const bgColors = {
@@ -119,11 +120,12 @@ export const projects = {
     gh_link: "https://github.com/Valpoli/ai-content-creator/tree/main"
   },
   project2: {
-    title: "project2",
-    description: "todo",
-    picture: gitIcon,
-    technos: ["C", "HTML", "CSS"],
-    gh_link: "https://github.com/Valpoli/ai-content-creator/tree/main"
+    title: "rag-templates",
+    description: "This project provide a base to build custom chatbots capable of"
+    + "answering questions based on your own documents and the page where the information was found",
+    picture: chat,
+    technos: ["Python", "Streamlit", "langchain", "Ollama", "Github Models", "Qdrant", "docker", "Uv", "Ruff"],
+    gh_link: "https://github.com/Valpoli/rag-templates"
   },
   project3: {
     title: "project3",
