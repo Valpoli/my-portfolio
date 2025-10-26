@@ -31,6 +31,7 @@ import vizityLogo from "../assets/experience_icon/vizity.png";
 // --- Project Pictures ---
 import story from "../assets/projects/story.png";
 import chat from "../assets/projects/chat.png";
+// import from "../assets/projects/.png";
 
 // Background Gradients
 export const bgColors = {
@@ -205,3 +206,4 @@ export const skills = {
     related_icons: [{ name: "Git", src: gitIcon }],
   },
 };
+
