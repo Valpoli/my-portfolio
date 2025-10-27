@@ -22,6 +22,39 @@ import nodejsIcon from "../assets/tech_icon/nodejs_icon.svg";
 import springbootIcon from "../assets/tech_icon/springboot_icon.png";
 import mysqlIcon from "../assets/tech_icon/mysql_icon.png";
 import dockerIcon from "../assets/tech_icon/docker_icon.png";
+import pytestIcon from "../assets/tech_icon/pytest_icon.svg";
+import muiIcon from "../assets/tech_icon/mui_icon.svg";
+import formikIcon from "../assets/tech_icon/formik_icon.png";
+import vueIcon from "../assets/tech_icon/vue_icon.svg";
+import viteIcon from "../assets/tech_icon/vite_icon.svg";
+import streamlitIcon from "../assets/tech_icon/streamlit_icon.svg";
+import nifiIcon from "../assets/tech_icon/nifi_icon.svg";
+import activemqIcon from "../assets/tech_icon/activemq_icon.svg";
+import mqttIcon from "../assets/tech_icon/mqtt_icon.svg";
+import nginxIcon from "../assets/tech_icon/nginx_icon.svg";
+import noderedIcon from "../assets/tech_icon/nodered_icon.svg";
+import sqliteIcon from "../assets/tech_icon/sqlite_icon.svg";
+import qdrantIcon from "../assets/tech_icon/qdrant_icon.png";
+import sqlIcon from "../assets/tech_icon/sql_icon.png";
+import mavenIcon from "../assets/tech_icon/maven_icon.svg";
+import npmIcon from "../assets/tech_icon/npm_icon.svg";
+import azureIcon from "../assets/tech_icon/azure_icon.png";
+import azurewebIcon from "../assets/tech_icon/azureweb_icon.png";
+import azurestorageIcon from "../assets/tech_icon/azurestorage_icon.png";
+import azuresearchIcon from "../assets/tech_icon/azuresearch_icon.png";
+import arduinoIcon from "../assets/tech_icon/arduino_icon.png";
+import esp32Icon from "../assets/tech_icon/esp32_icon.svg";
+import raspIcon from "../assets/tech_icon/rasp_icon.svg";
+import junitIcon from "../assets/tech_icon/junit_icon.png";
+import langchainIcon from "../assets/tech_icon/langchain_icon.png";
+import ollamaIcon from "../assets/tech_icon/ollama_icon.png";
+import githubmodelsIcon from "../assets/tech_icon/githubmodels_icon.png";
+import whisperIcon from "../assets/tech_icon/whisper_icon.png";
+import coquiIcon from "../assets/tech_icon/coqui_icon.png";
+import leonardoIcon from "../assets/tech_icon/leonardo_icon.jpg";
+import uvIcon from "../assets/tech_icon/uv_icon.png";
+import ruffIcon from "../assets/tech_icon/ruff_icon.svg";
+import clineIcon from "../assets/tech_icon/cline_icon.png";
 
 // --- Experience Icons ---
 import wobzLogo from "../assets/experience_icon/wobz.png";
@@ -31,7 +64,8 @@ import vizityLogo from "../assets/experience_icon/vizity.png";
 // --- Project Pictures ---
 import story from "../assets/projects/story.png";
 import chat from "../assets/projects/chat.png";
-// import from "../assets/projects/.png";
+import iot_dashboard from "../assets/projects/iot_dashboard.png";
+import telematic from "../assets/projects/telematic.png";
 
 // Background Gradients
 export const bgColors = {
@@ -55,7 +89,7 @@ export const experiences = {
     stack: {
       languages: ["Python", "C", "C++"],
       frameworks: ["Flask", "Arduino"],
-      tools: null,
+      tools: ["RaspberryPi"],
     },
     localisation: "St-Priest",
     country: "France",
@@ -98,8 +132,8 @@ export const experiences = {
       "Autonomous participation in a startup-like environment using an agile methodology.",
     ],
     stack: {
-      languages: ["Python", "JavaScript"],
-      frameworks: ["Flask", "React", "Material UI"],
+      languages: ["Java", "JavaScript"],
+      frameworks: ["SpringBoot", "React", "Material UI"],
       tools: null,
     },
     localisation: "Lyon",
@@ -113,14 +147,6 @@ export const experiences = {
 // Projects
 export const projects = {
   project1: {
-    title: "Ai video creator",
-    description: "A fully automated system that creates complete story-based videos :"
-    + " script writing, image generation, voice synthesis, subtitles, editing, and background music.",
-    picture: story,
-    technos: ["Python", "SQLite", "CSS", "Uv", "Ruff", "GitHub Models", "Whisper", "Coqui TTS", "Leonardo AI API"],
-    gh_link: "https://github.com/Valpoli/ai-content-creator/tree/main"
-  },
-  project2: {
     title: "rag-templates",
     description: "This project provide a base to build custom chatbots capable of"
     + "answering questions based on your own documents and the page where the information was found",
@@ -128,13 +154,31 @@ export const projects = {
     technos: ["Python", "Streamlit", "langchain", "Ollama", "Github Models", "Qdrant", "docker", "Uv", "Ruff"],
     gh_link: "https://github.com/Valpoli/rag-templates"
   },
-  project3: {
-    title: "project3",
-    description: "todo",
-    picture: gitIcon,
-    technos: ["C", "HTML", "CSS"],
-    gh_link: "https://github.com/Valpoli/ai-content-creator/tree/main"
+  project2: {
+    title: "RWC Telematics Platform",
+    description: "A web application capable of displaying, in real time, the number of passengers across different"
+    + "public transport modes in Toulouse, in order to monitor their usage during the 2023 Rugby World Cup.",
+    picture: telematic,
+    technos: ["Java", "JavaScript", "Spring Boot", "Python", "Vue.js", "Vite", "Node.js", "Apache NiFi", "ActiveMQ",
+     "MQTT", "SQL", "Nginx", "Docker", "Maven", "npm"],
+    gh_link: "https://github.com/Valpoli/rwc-telematics-platform"
   },
+  project3: {
+    title: "Ai video creator",
+    description: "A fully automated system that creates complete story-based videos :"
+    + " script writing, image generation, voice synthesis, subtitles, editing, and background music.",
+    picture: story,
+    technos: ["Python", "SQLite", "CSS", "Uv", "Ruff", "GitHub Models", "Whisper", "Coqui TTS", "Leonardo AI API"],
+    gh_link: "https://github.com/Valpoli/ai-content-creator"
+  },
+  project4: {
+    title: "Smart Env",
+    description: "An IoT-Based Real-Time Environment Controller. Capable of monitoring and regulating the"
+    + " environmental conditions of a room (temperature, humidity, and luminosity)",
+    picture: iot_dashboard,
+    technos: ["Java", "C++", "Arduino", "JavaScript", "Node-RED", "SprintBoot", "Maven", "JUnit", "Esp32"],
+    gh_link: "https://github.com/Valpoli/smart-env"
+  }
 };
 
 // Education
@@ -175,35 +219,104 @@ export const skills = {
       { name: "JavaScript", src: jsIcon },
     ],
   },
+
   frontend: {
     name: "Frontend",
     related_icons: [
       { name: "HTML", src: htmlIcon },
       { name: "CSS", src: cssIcon },
-      { name: "Tailwind", src: tailwindIcon },
       { name: "React", src: reactIcon },
+      { name: "Material UI", src: muiIcon },
+      { name: "Formik", src: formikIcon },
+      { name: "Vue.js", src: vueIcon },
+      { name: "Vite", src: viteIcon },
+      { name: "Tailwind", src: tailwindIcon },
+      { name: "Streamlit", src: streamlitIcon },
     ],
   },
+
   backend: {
     name: "Backend",
     related_icons: [
       { name: "Flask", src: flaskIcon },
       { name: "Django", src: djangoIcon },
+      { name: "Spring Boot", src: springbootIcon },
       { name: "Node.js", src: nodejsIcon },
-      { name: "SpringBoot", src: springbootIcon },
+      { name: "Apache NiFi", src: nifiIcon },
+      { name: "ActiveMQ", src: activemqIcon },
+      { name: "MQTT", src: mqttIcon },
+      { name: "Nginx", src: nginxIcon },
+      { name: "Node-RED", src: noderedIcon },
     ],
   },
+
+  ai_tools: {
+    name: "AI Tools & Frameworks",
+    related_icons: [
+      { name: "LangChain", src: langchainIcon },
+      { name: "Ollama", src: ollamaIcon },
+      { name: "GitHubModels", src: githubmodelsIcon },
+      { name: "Whisper", src: whisperIcon },
+      { name: "CoquiTTS", src: coquiIcon },
+      { name: "LeonardoAI", src: leonardoIcon },
+      { name: "Cline", src: clineIcon }
+    ],
+  },
+
   database: {
     name: "Database",
-    related_icons: [{ name: "MySQL", src: mysqlIcon }],
+    related_icons: [
+      { name: "MySQL", src: mysqlIcon },
+      { name: "SQLite", src: sqliteIcon },
+      { name: "Qdrant", src: qdrantIcon },
+      { name: "SQL", src: sqlIcon }
+    ],
   },
+
   devops: {
     name: "DevOps",
-    related_icons: [{ name: "Docker", src: dockerIcon }],
+    related_icons: [
+      { name: "Docker", src: dockerIcon },
+      { name: "Maven", src: mavenIcon },
+      { name: "npm", src: npmIcon },
+      { name: "Nginx", src: nginxIcon }, // déjà cité, mais pertinent ici aussi
+    ],
   },
-  cli: {
-    name: "CLI",
-    related_icons: [{ name: "Git", src: gitIcon }],
+
+  cloud: {
+    name: "Cloud & Azure",
+    related_icons: [
+      { name: "Microsoft Azure", src: azureIcon },
+      { name: "Azure Web App", src: azurewebIcon },
+      { name: "Azure Storage", src: azurestorageIcon },
+      { name: "Azure Search Index", src: azuresearchIcon },
+    ],
+  },
+
+  hardware: {
+    name: "Hardware & IoT",
+    related_icons: [
+      { name: "Arduino", src: arduinoIcon },
+      { name: "ESP32", src: esp32Icon },
+      { name: "RaspberryPi", src: raspIcon}
+    ],
+  },
+
+  testing: {
+    name: "Testing",
+    related_icons: [
+      { name: "JUnit", src: junitIcon },
+      { name: "pytest", src: pytestIcon },
+    ],
+  },
+
+  cli_tools: {
+    name: "CLI & Code Quality",
+    related_icons: [
+      { name: "Git", src: gitIcon },
+      { name: "Uv", src: uvIcon },
+      { name: "Ruff", src: ruffIcon },
+    ],
   },
 };
 

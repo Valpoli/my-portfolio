@@ -2,7 +2,7 @@ import { skills } from "./index"
 
 export default function Skills() {
   return (
-    <div className="flex flex-wrap justify-center gap-8 bg-gray-50 text-lg">
+    <div className="flex flex-wrap justify-center gap-8 bg-gray-50 text-lg p-4">
       {Object.values(skills).map((category) => (
         <div
           key={category.name}
@@ -18,7 +18,7 @@ export default function Skills() {
                             src={icon.src}
                             alt={icon.name}
                         />
-                        <span className="bg-gray-50 p-1 absolute bottom-[-2rem] text-black opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span className="bg-gray-50 p-1 absolute bottom-[-3rem] text-black opacity-0 group-hover:opacity-100 transition-opacity z-50 whitespace-nowrap">
                             {icon.name}
                         </span>
                     </div>

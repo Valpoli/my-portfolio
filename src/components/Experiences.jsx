@@ -14,7 +14,7 @@ export default function Experiences(){
     };
 
       return (
-        <div className="flex flex-col items-center gap-8 bg-gray-50 text-gray-800 text-left">
+        <div className="flex flex-col items-center p-4 gap-8 bg-gray-50 text-gray-800 text-left">
         {/* --- Job Experiences --- */}
         <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
             <h2 className="text-xl font-bold mb-6 text-left">Job Experiences</h2>

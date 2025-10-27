@@ -2,7 +2,7 @@ import { projects } from "./index"
 
 export default function Projects(){
     return (
-    <div className="flex flex-wrap justify-center gap-6 bg-gray-50 text-lg">
+    <div className="flex flex-wrap justify-center gap-8 bg-gray-200 text-lg p-4">
       {Object.values(projects).map((project, index) => (
          <a
           key={index}
@@ -17,7 +17,7 @@ export default function Projects(){
             className="w-full h-40 object-cover"
           />
 
-          <div className="p-4 flex flex-col gap-2">
+          <div className="p-4 flex text-xl flex-col gap-2">
             <h2 className="font-semibold text-gray-800 text-center break-words whitespace-normal">
               {project.title}
             </h2>

@@ -79,7 +79,7 @@ export default function Home(){
       </nav>
 
       {/* --- Contenu principal --- */}
-      <main className="w-full p-4">{renderContent()}</main>
+      <main className="w-full">{renderContent()}</main>
     </div>
   );
 }
