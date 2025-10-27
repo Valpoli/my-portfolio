@@ -279,7 +279,7 @@ export const skills = {
       { name: "Docker", src: dockerIcon },
       { name: "Maven", src: mavenIcon },
       { name: "npm", src: npmIcon },
-      { name: "Nginx", src: nginxIcon }, // déjà cité, mais pertinent ici aussi
+      { name: "Nginx", src: nginxIcon },
     ],
   },
 
