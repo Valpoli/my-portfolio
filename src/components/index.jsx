@@ -157,7 +157,7 @@ export const projects = {
   project2: {
     title: "RWC Telematics Platform",
     description: "A web application capable of displaying, in real time, the number of passengers across different"
-    + "public transport modes in Toulouse, in order to monitor their usage during the 2023 Rugby World Cup.",
+    + " public transport modes in Toulouse, in order to monitor their usage during the 2023 Rugby World Cup.",
     picture: telematic,
     technos: ["Java", "JavaScript", "Spring Boot", "Python", "Vue.js", "Vite", "Node.js", "Apache NiFi", "ActiveMQ",
      "MQTT", "SQL", "Nginx", "Docker", "Maven", "npm"],
